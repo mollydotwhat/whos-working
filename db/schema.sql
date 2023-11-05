@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS people_tracker_db;
+CREATE DATABASE people_tracker_db;
+
 -- tables needed: 
 
 --     department (id: INT PRIMARY KEY, name: VARCHAR(30) to hold department name), 
