@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const routes = require("./routes");
+const db = require('./config/connection.js');
+db;
 // const sequelize = require('./config/connection');
 //PRETTY sure I'm not supposed to use sequelize & models, even though we went over them before this assignment is due. This is the unit 12 assignment, those are for unit 13, etc etc. >:(
 const PORT = process.env.PORT || 3001;
