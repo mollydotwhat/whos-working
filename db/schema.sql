@@ -14,7 +14,7 @@ CREATE TABLE role (
     title VARCHAR(30) NOT NULL,
     salary DECIMAL,
     FOREIGN KEY (department_id)
-    REFERENCES department(id)
+        REFERENCES department(id)
 );
 --    role (id: INT PRIMARY KEY, title: VARCHAR(30), salary: DECIMAL, department_id: INT), 
 
@@ -26,7 +26,7 @@ CREATE TABLE employee (
     last_name VARCHAR(30),
     role_id INT,
     FOREIGN KEY (role_id)
-    REFERENCES role(id),
+        REFERENCES role(id),
     manager_id INT,
     -- i know recursive foreign keys are a thing; i just have to figure out HOW
 );
