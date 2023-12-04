@@ -11,7 +11,10 @@ app.use(express.urlencoded({ extended: false }));
 
 // TO DO: inquirer prompts
 
-async function start(){
+async function init (){
+// call inquirer prompts (also async)
+
+//display according to input/conditionals
 
 };
 
